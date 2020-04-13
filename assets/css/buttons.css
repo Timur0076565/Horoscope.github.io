@@ -1,0 +1,86 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+}
+.btn { 
+  border: 2px solid #FF953C;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .3s ease all;
+  -moz-transition: .3s ease all;
+  transition: .3s ease all;
+}
+.btn:hover { 
+  background-color: #FF953C;
+  color: #000;
+}
+
+.tieser__btn,
+.footer__btn{
+  padding: 20px 45px;
+}
+.features__btn{
+  margin-top: 60px;
+  padding: 20px 30px;
+}
+.reviews__btn{
+  font-size: 20px;
+  line-height: 24px;
+  padding: 13px 30px;
+  margin-top: 60px;
+}
+.footer__btn{
+  margin-top: 30px;
+}
+
+.form-body__btn{
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 60px;
+}
+
+@media (max-width: 850px) {
+  .btn {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .form-body__btn{
+    font-size: 20px!important;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .form-body__btn{
+    padding: 18px 35px;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    font-size: 18px;
+    line-height: 10px;
+  }
+  .tieser__btn,
+  .footer__btn {
+    padding: 18px 35px;
+  }
+  .form-body__btn{
+    font-size: 18px;
+  }
+  
+}
+@media (max-width: 350px){
+  .features__btn {
+      font-size: 16px;
+  }
+}

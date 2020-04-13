@@ -1,0 +1,352 @@
+
+.reviews {
+    position: relative;
+    padding-top: 5%;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url('../img/planet-before.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (max-width: 925px) {
+    .main::before {
+      top: 25%;
+    }
+  }
+@media (max-width: 850px) {
+  .main::before {
+    top: 29%;
+  }
+}
+@media (max-width: 768px) {
+  .main::before {
+    display: none;
+  }
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__title{
+    padding: 15px 0 60px;
+}
+
+.reviews__items {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__item{    
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    outline: none;
+    cursor: pointer;
+}
+
+.reviews-img{
+    position: relative;
+}
+.reviews__img-border {
+    -webkit-animation: linear 24s sun infinite;
+    animation: linear 24s sun infinite;
+}
+@-webkit-keyframes sun {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes sun {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.reviews__avatar-frame {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    top: 10%;
+    left: 10%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.reviews__subtitle{
+    padding: 30px 0 20px;
+}
+
+.reviews__descr{
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: #ECECEC;
+}
+
+
+.slick-slider {
+    width: 100%;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.slick-list {
+    overflow: hidden;
+    padding: 0 0 5% 0;
+}
+.slick-track {
+    display: flex;
+}
+.slick-dots {
+    position: absolute;
+    top: 80%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    z-index: 4;
+}
+.slick-dots li{
+    margin: 0 3px;
+}
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.slick-active button {
+    background-color: #FF953C;
+}
+
+
+
+/*reviews second variant*/
+
+.reviews__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #E1E1E1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.reviews__element {
+    padding: 30px 40px 0 20px;
+    display: flex;
+}
+.last-child {
+    padding-bottom: 30px;
+}
+.reviews__element-avatar {
+    width: 58px;    
+    height: 54px;
+    top: 10%;
+    left: 10%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.reviews__element-avatar img {
+    width: 58px;
+    height: 54px;
+}
+.reviews__info{
+    width: 100%;
+    padding: 3px 5px 0 20px;
+}
+.reviews__info h5{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+    margin: 0;
+}
+.reviews__info p{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #404040;
+    padding: 10px 0 0;
+}
+.reviews__date p{
+    color: #939393;
+    padding: 15px 25px 0 0;
+}
+.reviews__like{
+    background-image: url('../img/like.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+.reviews__like:hover {
+    background-image: url('../img/click-like.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+/* .click-like {
+    background-image: url('../img/click-like.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+} */
+.reviews__info-img{
+    padding: 10px 0 0 0;
+    cursor: pointer;
+}
+.reviews__date {
+    display: flex;
+}
+.reviews__form{
+    padding: 20px 40px 20px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews__img-smile,
+.reviews__img-photo {
+    cursor: pointer;
+}
+.reviews__comments {
+    display: flex;
+}
+.reviews__img-photo {
+    padding: 0 30px 0 15px;
+}
+.reviews__input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.reviews__input::-webkit-placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: #939393;
+}
+.reviews__input::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: #939393;
+}
+.reviews__comments-btn{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF953C;
+    font-family: 'Roboto';
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+.reviews__comments-btn:hover {
+    color: #333D45;
+}
+/*/reviews second variant*/
+
+@media (max-width: 1000px) {
+    .reviews__subtitle {
+        padding: 20px 0 15px;
+        font-size: 20px;
+    }
+    .reviews__descr {
+        font-size: 15px;
+        line-height: 20px;
+        width: 40vw;
+    } 
+
+}
+@media (max-width: 850px) {
+    .reviews__title{
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .reviews__descr {
+        width: 50vw;
+    } 
+    .reviews__btn {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 550px) {
+    .reviews::before {
+       display: none;
+    }
+
+    .slick-dots {
+        top: 83%;
+    }
+
+    .reviews__element-avatar {
+        width: 51px;
+        height: 44px;
+    }
+    .reviews__element-avatar img {
+        width: 44px;
+        height: 44px;
+    }
+    .reviews__input::-webkit-placeholder {
+        font-size: 0px;
+    }
+    .reviews__input::placeholder {
+        font-size: 0px;
+    }
+}
+@media (max-width: 420px) {
+    .reviews__element-avatar {
+        width: 54px;
+        height: 42px;
+    }
+    .reviews__element {
+        padding: 17px 15px 0 15px;
+    }
+    .last-child {
+        padding-bottom: 17px;
+    }
+    .reviews__info h5 {
+        font-size: 15px; 
+    }
+    .reviews__info p {
+        font-size: 14px;
+    }
+    .reviews__input {
+        font-size: 14px;
+    }
+    .reviews__comments-btn {
+        font-size: 14px;
+    }
+}
+
+

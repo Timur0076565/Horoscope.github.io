@@ -1,0 +1,125 @@
+.features {
+    position: relative;
+}
+.features__bg{
+    position: absolute;
+    top: -55px;
+    left: 12%;
+    -webkit-animation: linear 24s features infinite;
+    animation: linear 24s features infinite;
+    z-index: -1;
+}
+@-webkit-keyframes features {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes features {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.features__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.features__items{
+    display: flex;
+    justify-content: center;
+}
+.features__item{    
+    background: #E1E1E1;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 30px 15px;
+}
+.features__item:first-child{
+    margin-right: 2%;
+}
+.features__item:last-child{
+    margin-left: 2%;
+}
+
+.features__img{
+    padding: 30px 0;
+}
+.features__title{
+    padding: 10px 0 60px;
+}
+.features__subtitle{
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    padding: 0 0 30px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features__descr{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+@media (max-width: 1030px) {
+    .features__title {
+        padding: 10px 0 40px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 920px) {
+    .features__items {
+        flex-direction: column;
+        align-content: center;
+    }
+    .features__item:first-child{
+        margin-right: 0;
+    }
+    .features__item:last-child{
+        margin-left: 0;
+    }
+    .features__item{
+        margin-top: 5%;
+        width: 65vw;
+    }
+}
+@media (max-width: 850px) {
+    .features__content{
+        padding-bottom: 10%;
+    }
+    .features__title{
+        padding: 10px 0 20px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .features__title{
+        padding: 10px 0 10px;
+    }
+    .features__item{
+        margin-top: 5%;
+        width: 75vw;
+    }
+    .features__img {
+        padding: 10px 0;
+    }
+    .features__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0px 0 10px;
+    }
+    .features__descr {
+        font-size: 15px;
+    }
+}
+@media (max-width: 550px) {
+    .features__item{
+        margin-top: 5%;
+        width: 85vw;
+    }
+}

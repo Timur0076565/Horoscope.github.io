@@ -1,0 +1,160 @@
+.about {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.about__img {
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+}
+.about__img-moon-sign,
+.about__img-moon-stars,
+.about__img-moon-inverse{
+    position: absolute;
+    
+}
+.about__img-moon-sign {
+    top: 30px;
+    left: 0;
+    -webkit-animation: linear 24s moon infinite;
+    animation: linear 24s moon infinite;
+}
+.about__img-moon-stars{
+    top: 20px;
+    left: -40px;
+    -webkit-animation: linear 24s stars infinite;
+    animation: linear 24s stars infinite;
+}
+.about__img-moon-inverse {
+    top: 10px;
+    left: -20px;
+}
+
+@-webkit-keyframes moon {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes moon {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes stars {
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes stars {
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.about__content {
+    width: 40%;
+    padding-left: 60px;
+    padding-top: 35px;
+}
+span {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FF953C;
+}
+.about__title {
+    line-height: 48px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.about__descr{
+    font-size: 20px;
+    line-height: 30px;
+    color: #CCCCCC;
+    padding-bottom: 20px;
+}
+.about__descr img{
+    margin: 0 5px -5px 5px;
+}
+
+@media (max-width: 1280px) {
+    .about__img-moon-stars {
+        top: 35px;
+        left: -15px;
+    }
+}
+@media (max-width: 1030px) {
+    .about__img-moon-inverse {
+        top: 19px;
+        left: -2px;
+    }
+    .about__img-moon-stars{
+        top: 45px;
+        left: 0px;
+    }
+    .about__content {
+        padding-left: 40px;
+        padding-top: 0px;
+        
+    }
+    .about__title {
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    .about__descr {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    
+}
+@media (max-width: 850px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+    .about__img {
+        width: 62vw;
+        height: 70vw;
+    }
+    .about__content {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    span {
+        font-size: 12px;
+    }
+    .about__descr {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        width: 80vw;    
+    }
+    .about__title {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .main {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .features__btn {
+        margin-top: 35px;
+    }
+}
+@media (max-width: 470px) {
+    .about__img-moon-stars{
+        top: 35px;
+        left: 0px;
+    }
+}
+@media (max-width: 350px) {
+    .features__btn {
+        padding: 20px 15px;
+    }
+}
+

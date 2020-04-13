@@ -1,0 +1,76 @@
+.tieser {
+    padding: 130px 0 60px 0;
+    position: relative;
+}
+.tieser::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url('../img/bg-tieser.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.strong {
+    font-weight: bold;
+}
+.tieser__content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tieser__content p{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+@media (max-width: 850px) {
+    .tieser__content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+    .tieser__content p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .tieser {
+        padding: 20% 0 10% 0;
+    }
+    .tieser__content h1 {
+        font-size: 30px;
+        line-height: 35px;
+        padding-bottom: 10px;
+    }
+    .tieser__content p {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 30px;
+    }
+    
+}
+@media (max-width: 550px) {
+    .tieser__content p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .tieser {
+        padding: 30% 0 60px 0;
+    }
+    .tieser__content h1 {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    .tieser__content p {
+        font-size: 12px;
+    }
+}
+    

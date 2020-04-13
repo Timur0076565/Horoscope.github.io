@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>form</title>
+</head>
+<body>
+  <div class="form-header header" >
+    <div class="wrapper">
+      <div class="form-header__content header__content">
+        <div class="form-header__logo header__logo"><img src="./assets/img/logo.svg" alt="Logo"></div>
+        <a href="#" class="form-header__link">Назад</a>
+      </div>
+    </div>
+  </div>
+  <div class="form-header__progress-bar"></div>
+
+  <div class="form-title">
+    <div class="wrapper">
+      <div class="form-title__content">
+        <h3>
+          Астрологическая карта
+        </h3>
+        <p>Точность персонального гороскопа зависит от точности<br>  ваших ответов. Отвечайте на вопросы честно.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-questions">
+    <div class="form_questions__item" data-qid="1">
+      <div class="form-body">
+        <div class="wrapper">
+          <div class="form-body__content">
+            <span class="form-body__span">вопрос 1 из 3</span>
+              <h3 class="form-body__title">Ваш любимый цвет</h3>
+              <div class="form-body__input">
+                <label class="form-body__label">
+                    <input type="radio" value="Красный">
+                  Красный
+                  <span></span>
+                </label>
+              </div>
+              <div class="form-body__input">
+                <label class="form-body__label">
+                    <input type="radio" value="Фиолетовый">
+                    Фиолетовый
+                  <span></span>
+                </label>
+              </div>
+              <div class="form-body__input form-body__input-last-child">
+                <label class="form-body__label">
+                    <input type="radio" value="Оранжевый">
+                    Оранжевый
+                  <span></span>
+                </label>
+              </div>      
+            <div class="form-body__btn-container btn-container">
+              <a class="form-body__btn btn btn-next" href="#">следующий вопрос</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form_questions__item" data-qid="2">
+      <div class="form-body">
+        <div class="wrapper">
+          <div class="form-body__content">
+            <span class="form-body__span">вопрос 2 из 3</span>
+            <h3 class="form-body__title">Укажите вашу дату рождения</h3>
+            <input type="text" class="form-body__input" placeholder="20.04.2020">
+            <div class="form-body__btn-container btn-container">
+              <a class="form-body__btn btn btn-next" href="#">следующий вопрос</a>
+            </div>
+            <a class="form-body__link btn-prev" href="#">к предыдущему вопросу</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form_questions__item" data-qid="3">
+      <div class="form-body">
+        <div class="wrapper">
+          <div class="form-body__content">
+            <span class="form-body__span">вопрос 3 из 3</span>
+            <h3 class="form-body__title">Укажите вашу дату рождения</h3>
+            <input type="text" class="form-body__input" placeholder="20.04.2020">
+            <div class="form-body__btn-container btn-container">
+              <a class="form-body__btn btn btn-end" href="#">завершить опрос</a>
+            </div>
+            <a class="form-body__link btn-prev" href="#">к предыдущему вопросу</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-footer footer">
+    <div class="wrapper">
+        <p class="form-footer__copy footer__copy">2020 All rights reserved</p>
+    </div>
+  </div>
+
+  <div class="overlay">
+    
+        <div class="modal__content">
+            <h4 class="modal__title">Куда отправлять результаты?</h4>
+            <p class="modal__text">Выберите куда бы вы хотели чтобы мы<br> отправляли ваши персональные гороскопы.</p>
+            <div class="modal__links">
+                <a href="" class="modal__link"><img class="modal__img viber" src="./assets/img/viber.svg"> Viber</a>
+                <a href="" class="modal__link"><img class="modal__img whatsapp" src="./assets/img/whatsapp.svg"> Whatsapp</a>
+                <a href="" class="modal__link"><img class="modal__img mail" src="./assets/img/mail.svg"> Почта</a>
+                <a href="" class="modal__link"><img class="modal__img sms" src="./assets/img/sms.svg"> СМС</a>
+            </div>
+        </div>
+    
+  </div>
+
+
+  <script src="./assets/js/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
